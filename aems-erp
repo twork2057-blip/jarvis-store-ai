@@ -1,1 +1,417 @@
+<!DOCTYPE html>
 
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-tertiary': '#370096', 'on-surface-variant': '#bac9cc', 'on-tertiary-container': '#622be5', 'on-primary': '#00363d', 'surface-container-high': '#262a34', 'on-secondary-fixed': '#00210b', 'primary-fixed-dim': '#00daf3', 'secondary-fixed': '#62ff96', 'tertiary': '#f1e9ff', 'on-error-container': '#ffdad6', 'on-tertiary-fixed-variant': '#4f00d0', 'on-primary-fixed-variant': '#004f58', 'inverse-primary': '#006875', 'background': '#0f131c', 'on-error': '#690005', 'tertiary-fixed': '#e8deff', 'surface': '#0f131c', 'on-tertiary-fixed': '#20005f', 'outline': '#849396', 'primary-container': '#00e5ff', 'surface-container': '#1c2029', 'surface-tint': '#00daf3', 'inverse-on-surface': '#2c303a', 'surface-bright': '#353943', 'secondary-fixed-dim': '#00e475', 'tertiary-container': '#d6c9ff', 'surface-container-highest': '#31353f', 'on-secondary-fixed-variant': '#005226', 'tertiary-fixed-dim': '#cdbdff', 'on-surface': '#dfe2ef', 'on-primary-fixed': '#001f24', 'on-background': '#dfe2ef', 'on-secondary-container': '#00622e', 'surface-container-low': '#181b25', 'surface-variant': '#31353f', 'primary-fixed': '#9cf0ff', 'primary': '#c3f5ff', 'surface-dim': '#0f131c', 'on-primary-container': '#00626e', 'inverse-surface': '#dfe2ef', 'error-container': '#93000a', 'secondary-container': '#05e777', 'outline-variant': '#3b494c', 'on-secondary': '#003918', 'secondary': '#7dffa2', 'error': '#ffb4ab', 'surface-container-lowest': '#0a0e17' }, 'borderRadius': { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, 'spacing': { 'viewport-inset-mobile': '0.75rem', 'regular': '1rem', 'compact': '0.75rem', 'action-bar-height': '3rem', 'panel-header-height': '2.25rem', 'sub-atom': '0.125rem', 'atom': '0.25rem', 'micro': '0.5rem', 'spacious': '1.5rem', 'dock': '2rem', 'viewport-inset-desktop': '1.5rem', 'grid-gutter': '0.5rem' }, 'fontFamily': { 'micro-coordinate': ['JetBrains Mono'], 'telemetry-pill': ['JetBrains Mono'], 'headline-md': ['Space Grotesk'], 'body-sm': ['Inter'], 'data-mono-lg': ['JetBrains Mono'], 'body-md': ['Inter'], 'display-xl-mobile': ['Space Grotesk'], 'data-mono-md': ['JetBrains Mono'], 'body-lg': ['Inter'], 'display-xl': ['Space Grotesk'], 'headline-lg': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'] }, 'fontSize': { 'micro-coordinate': ['9px', { lineHeight: '10px', letterSpacing: '0.1em', fontWeight: '400' }], 'telemetry-pill': ['10px', { lineHeight: '12px', letterSpacing: '0.08em', fontWeight: '700' }], 'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-sm': ['11px', { lineHeight: '15px', letterSpacing: '0.02em', fontWeight: '400' }], 'data-mono-lg': ['16px', { lineHeight: '20px', letterSpacing: '0.04em', fontWeight: '600' }], 'body-md': ['13px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '400' }], 'display-xl-mobile': ['32px', { lineHeight: '36px', letterSpacing: '-0.02em', fontWeight: '700' }], 'data-mono-md': ['12px', { lineHeight: '16px', letterSpacing: '0.05em', fontWeight: '500' }], 'body-lg': ['15px', { lineHeight: '22px', letterSpacing: '0em', fontWeight: '400' }], 'display-xl': ['48px', { lineHeight: '52px', letterSpacing: '-0.03em', fontWeight: '700' }], 'headline-lg': ['30px', { lineHeight: '36px', letterSpacing: '-0.02em', fontWeight: '600' }], 'headline-sm': ['18px', { lineHeight: '24px', letterSpacing: '0em', fontWeight: '500' }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_0_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-compact flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-micro"><img alt="AEMS Neural Core Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_xyEEDfKxphAM8gbREq01amLT0cedqYo23HRSUg6itTsL8bPM9nIrTJS9t18futjd9wVgUQBQw24zBL_OYSfCP2zmHU8xzZGnxA5q6r0Jq1K_FDq0OJrXKBrAcifRtSVtz3XMUZsD-OQKQF_liBz8giRDGxuVcO--Lg22cvZELwVvY_c2l2-f4zUPgKLrO63vfVnCwA8G3uLUhpf9JujH0E-9s6vZbFxREN2BuMcEOH587HExXX1SOjA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">AEMS ERP</span><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant tracking-widest uppercase">NEURAL OS v4.2</span></div></div><div class="h-2 w-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(125,255,162,0.8)]"></div></div><div class="px-compact py-micro bg-surface-container-low/40"><div class="flex items-center justify-between px-micro py-sub-atom bg-surface-container-high rounded"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase tracking-wider">SYNAPSE LINK</span><span class="font-telemetry-pill text-telemetry-pill text-secondary uppercase tracking-widest">ONLINE // 0.4MS</span></div></div><nav class="flex-1 overflow-y-auto px-compact py-compact space-y-spacious" data-active-classes="bg-surface-container-high text-primary border-l-2 border-primary-container font-medium"><div class="space-y-sub-atom"><div class="px-micro py-sub-atom font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase tracking-widest">Command &amp; AI</div><div class="space-y-sub-atom"><a aria-current="page" class="flex items-center gap-compact px-micro py-micro rounded transition-colors bg-surface-container-high text-primary border-l-2 border-primary-container font-medium" data-path="executive-command-center" href="#"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-body-md text-body-md">Executive Command</span></a><a class="flex items-center justify-between px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors group" data-path="jarvis-ai-assistant" href="#"><div class="flex items-center gap-compact"><span class="material-symbols-outlined text-[16px] text-primary-container">psychology</span><span class="font-body-md text-body-md group-hover:text-primary">JARVIS Assistant</span></div><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="live-telemetry" href="#"><span class="material-symbols-outlined text-[16px]">pulse_alert</span><span class="font-body-md text-body-md">Live Telemetry</span></a></div></div><div class="space-y-sub-atom"><div class="px-micro py-sub-atom font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase tracking-widest">Supply Chain &amp; Sourcing</div><div class="space-y-sub-atom"><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="material-master" href="#"><span class="material-symbols-outlined text-[16px]">category</span><span class="font-body-md text-body-md">Material Master</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bom-management" href="#"><span class="material-symbols-outlined text-[16px]">account_tree</span><span class="font-body-md text-body-md">BOM Management</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mrp-intelligence" href="#"><span class="material-symbols-outlined text-[16px]">insights</span><span class="font-body-md text-body-md">MRP Intelligence</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="purchase-rfq" href="#"><span class="material-symbols-outlined text-[16px]">shopping_cart</span><span class="font-body-md text-body-md">Purchase &amp; RFQ</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="supplier-hub" href="#"><span class="material-symbols-outlined text-[16px]">hub</span><span class="font-body-md text-body-md">Supplier Hub</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="inward-grn-ocr" href="#"><span class="material-symbols-outlined text-[16px]">document_scanner</span><span class="font-body-md text-body-md">Inward &amp; GRN (OCR)</span></a></div></div><div class="space-y-sub-atom"><div class="px-micro py-sub-atom font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase tracking-widest">Shopfloor &amp; Manufacturing</div><div class="space-y-sub-atom"><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="store-bin-inventory" href="#"><span class="material-symbols-outlined text-[16px]">inventory_2</span><span class="font-body-md text-body-md">Store &amp; Bin Storage</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="material-issue" href="#"><span class="material-symbols-outlined text-[16px]">outbox</span><span class="font-body-md text-body-md">Material Issue</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="smt-pcb-assembly" href="#"><span class="material-symbols-outlined text-[16px]">memory</span><span class="font-body-md text-body-md">SMT &amp; PCB Line</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="assembly-wip" href="#"><span class="material-symbols-outlined text-[16px]">precision_manufacturing</span><span class="font-body-md text-body-md">Assembly &amp; WIP</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="testing-station" href="#"><span class="material-symbols-outlined text-[16px]">speed</span><span class="font-body-md text-body-md">Testing Station</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="quality-control" href="#"><span class="material-symbols-outlined text-[16px]">verified</span><span class="font-body-md text-body-md">Quality (QC/NCR)</span></a></div></div><div class="space-y-sub-atom"><div class="px-micro py-sub-atom font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase tracking-widest">Logistics &amp; Traceability</div><div class="space-y-sub-atom"><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="warehouse-finished-goods" href="#"><span class="material-symbols-outlined text-[16px]">warehouse</span><span class="font-body-md text-body-md">Finished Goods</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="packing-dispatch" href="#"><span class="material-symbols-outlined text-[16px]">local_shipping</span><span class="font-body-md text-body-md">Packing &amp; Dispatch</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="traceability-graph" href="#"><span class="material-symbols-outlined text-[16px]">schema</span><span class="font-body-md text-body-md">Traceability Graph</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="returns-scrap" href="#"><span class="material-symbols-outlined text-[16px]">delete_sweep</span><span class="font-body-md text-body-md">Returns &amp; Scrap</span></a></div></div><div class="space-y-sub-atom"><div class="px-micro py-sub-atom font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase tracking-widest">System &amp; Governance</div><div class="space-y-sub-atom"><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="automation-center" href="#"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="font-body-md text-body-md">Automation Triggers</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[16px]">query_stats</span><span class="font-body-md text-body-md">Reports &amp; Analytics</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audit-trail" href="#"><span class="material-symbols-outlined text-[16px]">history</span><span class="font-body-md text-body-md">Audit Trail</span></a><a class="flex items-center gap-compact px-micro py-micro rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="security-roles" href="#"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span class="font-body-md text-body-md">Security &amp; Roles</span></a></div></div></nav><div class="p-compact bg-surface-container-lowest"><div class="p-micro rounded bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-micro"><span class="material-symbols-outlined text-secondary text-[18px]">memory</span><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">EDGE MATRIX</span><span class="font-telemetry-pill text-telemetry-pill text-on-surface">NODE 01-PROD</span></div></div><span class="font-micro-coordinate text-micro-coordinate text-primary-fixed-dim">SECURE</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.5)] z-40 flex items-center justify-between px-regular"><div class="flex items-center gap-spacious"><div class="flex items-center gap-micro px-compact py-sub-atom rounded bg-surface-container-high"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">SYS_ID</span><span class="font-telemetry-pill text-telemetry-pill text-primary uppercase">AEMS-CORE</span></div><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-compact text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low rounded pl-10 pr-12 py-sub-atom font-data-mono-md text-data-mono-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Command Palette or Search Nodes..." type="text"/><div class="absolute right-compact px-sub-atom py-sub-atom rounded bg-surface-container-highest font-micro-coordinate text-micro-coordinate text-on-surface-variant">CTRL+K</div></div><div class="hidden xl:flex items-center gap-micro"><div class="flex items-center gap-sub-atom px-compact py-sub-atom rounded bg-surface-container-low"><div class="h-1.5 w-1.5 rounded-full bg-secondary"></div><span class="font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase">SYS:</span><span class="font-telemetry-pill text-telemetry-pill text-secondary">99.98%</span></div><div class="flex items-center gap-sub-atom px-compact py-sub-atom rounded bg-surface-container-low"><div class="h-1.5 w-1.5 rounded-full bg-secondary"></div><span class="font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase">DB:</span><span class="font-telemetry-pill text-telemetry-pill text-secondary">SYNC</span></div><div class="flex items-center gap-sub-atom px-compact py-sub-atom rounded bg-surface-container-low"><div class="h-1.5 w-1.5 rounded-full bg-primary-container"></div><span class="font-telemetry-pill text-telemetry-pill text-on-surface-variant uppercase">JARVIS:</span><span class="font-telemetry-pill text-telemetry-pill text-primary-container">ACTIVE</span></div></div></div><div class="flex items-center gap-regular"><div class="hidden md:flex items-center gap-compact px-compact py-sub-atom rounded bg-surface-container-low"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">SHIFT-A // SMT-ALPHA:</span><span class="font-telemetry-pill text-telemetry-pill text-secondary uppercase">RUNNING</span></div><button class="relative p-compact rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-micro-coordinate text-micro-coordinate font-bold">4</span></button><div class="flex items-center gap-compact pl-micro"><div class="flex flex-col text-right"><span class="font-body-md text-body-md font-semibold text-on-surface leading-tight">Super Admin</span><span class="font-micro-coordinate text-micro-coordinate text-primary tracking-wide">CLEARANCE LVL 5</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 pb-12 w-full px-regular bg-surface min-h-[calc(100vh-3rem)]"><div class="flex flex-col w-full space-y-spacious pb-16">
+<!-- TOP HUD BAR: Breadcrumb, Telemetry Indicators & Precision Actuators -->
+<section class="flex flex-col xl:flex-row xl:items-center justify-between gap-compact bg-surface-container-lowest p-compact rounded shadow-md">
+<div class="flex flex-col gap-sub-atom min-w-0">
+<div class="flex items-center gap-micro text-on-surface-variant font-micro-coordinate text-micro-coordinate uppercase tracking-widest flex-wrap">
+<span class="hover:text-primary transition-colors cursor-pointer">Supply Chain &amp; Sourcing</span>
+<span>/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Inward &amp; GRN (OCR)</span>
+<span>/</span>
+<span class="text-primary-container font-semibold">Station 02 • Conveyor Alpha</span>
+</div>
+<div class="flex items-center gap-compact flex-wrap pt-sub-atom">
+<div class="flex items-center gap-micro px-compact py-sub-atom rounded bg-surface-container-high">
+<span class="h-2 w-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(125,255,162,0.8)]"></span>
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">OPTICS:</span>
+<span class="font-telemetry-pill text-telemetry-pill text-secondary">4K 60FPS INDUSTRIAL VISION ONLINE</span>
+</div>
+<div class="flex items-center gap-micro px-compact py-sub-atom rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-primary text-[14px]">psychology</span>
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">NEURAL OCR:</span>
+<span class="font-telemetry-pill text-telemetry-pill text-primary">TESSERACT v4.2 [18ms]</span>
+</div>
+<div class="flex items-center gap-micro px-compact py-sub-atom rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span>
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">PO RECON:</span>
+<span class="font-telemetry-pill text-telemetry-pill text-secondary">100% SYNCED</span>
+</div>
+</div>
+</div>
+<!-- Actuators Panel -->
+<div class="flex items-center gap-micro flex-wrap">
+<button class="flex items-center gap-micro px-compact py-micro bg-primary-container text-on-primary font-data-mono-md text-data-mono-md font-bold rounded shadow-sm hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+<span>SCAN NEXT REEL</span>
+</button>
+<button class="flex items-center gap-micro px-compact py-micro bg-surface-container text-primary font-data-mono-md text-data-mono-md rounded hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>PRINT 2D QR</span>
+</button>
+<button class="flex items-center gap-micro px-compact py-micro bg-surface-container text-on-surface-variant font-data-mono-md text-data-mono-md rounded hover:bg-surface-container-high hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+<span>DIRECT TO VAULT</span>
+</button>
+<button class="flex items-center gap-micro px-compact py-micro bg-surface-container text-error font-data-mono-md text-data-mono-md rounded hover:bg-error-container hover:text-on-error-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">report</span>
+<span>EXCEPTION</span>
+</button>
+</div>
+</section><section class="bg-surface-container-lowest border border-primary-container/30 p-compact rounded-lg shadow-xl relative overflow-hidden flex flex-col gap-compact" id="usb-scanner-deck"><div class="flex flex-wrap items-center justify-between gap-compact bg-surface-container-low px-compact py-micro rounded border-l-2 border-primary-container"><div class="flex items-center gap-compact"><div class="flex items-center gap-micro"><span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span></span><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">HARDWARE USB SCANNER TEST DECK</span></div><span class="font-micro-coordinate text-micro-coordinate px-micro py-sub-atom rounded bg-secondary/15 text-secondary font-bold uppercase tracking-wider">BURST DETECTOR ACTIVE (&lt;35MS)</span></div><div class="flex items-center gap-micro flex-wrap"><button class="flex items-center gap-micro px-compact py-sub-atom bg-surface-container text-secondary font-data-mono-md text-data-mono-md rounded hover:bg-surface-container-high transition-colors" id="btn-sound-toggle" onclick="toggleAudioBeep()"><span class="material-symbols-outlined text-[16px]" id="sound-icon">volume_up</span><span id="sound-status-text">AUDIO BEEP: ON</span></button><button class="flex items-center gap-micro px-compact py-sub-atom bg-surface-container text-primary font-data-mono-md text-data-mono-md rounded hover:bg-surface-container-high transition-colors" id="btn-serial-connect" onclick="connectUsbSerial()"><span class="material-symbols-outlined text-[16px]">cable</span><span id="serial-status-text">CONNECT USB SCANNER / SERIAL</span></button><div class="flex items-center gap-micro px-compact py-sub-atom rounded bg-surface-container-high"><span class="material-symbols-outlined text-primary text-[14px]">barcode_reader</span><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase">COMPATIBLE:</span><span class="font-telemetry-pill text-telemetry-pill text-on-surface">ZEBRA • HONEYWELL • DATALOGIC • TVS</span></div></div></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-compact items-center"><div class="lg:col-span-5 flex items-center gap-micro bg-surface-container-low p-sub-atom rounded border border-outline-variant"><span class="material-symbols-outlined text-primary-container pl-micro text-[20px]">keyboard_alt</span><input class="w-full bg-transparent px-micro py-sub-atom font-data-mono-md text-data-mono-md text-primary placeholder:text-on-surface-variant focus:outline-none" id="manual-barcode-input" onkeydown="if(event.key==='Enter'){triggerManualBarcodeScan();}" placeholder="Scan with USB gun or paste raw 2D Matrix string..." type="text"/><button class="px-compact py-sub-atom bg-primary-container text-on-primary font-data-mono-md text-data-mono-md font-bold rounded hover:brightness-110 active:scale-95 transition-all flex items-center gap-sub-atom flex-shrink-0" onclick="triggerManualBarcodeScan()"><span class="material-symbols-outlined text-[16px]">send</span><span>TRIGGER SCAN</span></button></div><div class="lg:col-span-7 flex items-center gap-micro flex-wrap"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant uppercase tracking-wider mr-sub-atom flex items-center gap-sub-atom"><span class="material-symbols-outlined text-[14px] text-primary">touch_app</span> TEST REEL CHIPS:</span><button class="px-micro py-sub-atom bg-surface-container hover:bg-surface-container-high text-on-surface text-micro-coordinate font-data-mono-md rounded border border-primary/20 hover:border-primary transition-all" onclick="injectBarcodeSample('yageo')">01. Yageo 100nF Reel</button><button class="px-micro py-sub-atom bg-surface-container hover:bg-surface-container-high text-on-surface text-micro-coordinate font-data-mono-md rounded border border-secondary/20 hover:border-secondary transition-all" onclick="injectBarcodeSample('stm32')">02. STM32F407 MCU</button><button class="px-micro py-sub-atom bg-surface-container hover:bg-surface-container-high text-on-surface text-micro-coordinate font-data-mono-md rounded border border-tertiary/20 hover:border-tertiary transition-all" onclick="injectBarcodeSample('gan')">03. GaN FET 650V</button><button class="px-micro py-sub-atom bg-surface-container hover:bg-surface-container-high text-on-surface text-micro-coordinate font-data-mono-md rounded border border-primary-fixed-dim/20 hover:border-primary-fixed-dim transition-all" onclick="injectBarcodeSample('ti_pmic')">04. TI PMIC TPS65</button><button class="px-micro py-sub-atom bg-error/10 hover:bg-error/20 text-error text-micro-coordinate font-data-mono-md rounded border border-error/30 hover:border-error transition-all" onclick="injectBarcodeSample('tampered')">05. Tampered/NCR Reel</button></div></div><div class="hidden items-center justify-between px-compact py-sub-atom bg-secondary/10 border border-secondary/40 rounded text-secondary font-data-mono-md text-data-mono-md transition-all" id="scan-feedback-banner"><div class="flex items-center gap-compact"><span class="material-symbols-outlined text-[18px] animate-pulse text-secondary">verified</span><span id="scan-feedback-text">SUCCESS: 2D DataMatrix captured via hardware interrupt [Payload: 68 bytes, burst: 12ms]</span></div><span class="font-micro-coordinate text-micro-coordinate text-secondary uppercase bg-secondary/20 px-micro py-sub-atom rounded">AUTO-MATCH CONFIRMED</span></div></section>
+<!-- OPERATIONAL SUMMARY METRICS STRIP -->
+<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-grid-gutter">
+<!-- Tile 1 -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-micro-coordinate text-micro-coordinate uppercase tracking-wider">Today's Inward Lots</span>
+<span class="material-symbols-outlined text-[16px] text-primary">conveyor_belt</span>
+</div>
+<div class="mt-micro">
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">54 LOTS</div>
+<div class="font-micro-coordinate text-micro-coordinate text-secondary mt-sub-atom">₹1.48 Cr PROCESSED (100%)</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 mt-micro rounded overflow-hidden">
+<div class="bg-primary-container h-full w-[84%]"></div>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-micro-coordinate text-micro-coordinate uppercase tracking-wider">OCR Auto-Pass</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+<div class="mt-micro">
+<div class="font-headline-md text-headline-md text-secondary font-bold tracking-tight">99.4%</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant mt-sub-atom">FIRST-SCAN CONFIDENCE</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 mt-micro rounded overflow-hidden">
+<div class="bg-secondary h-full w-[99.4%]"></div>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-micro-coordinate text-micro-coordinate uppercase tracking-wider">Quarantine / MBB</span>
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+</div>
+<div class="mt-micro">
+<div class="font-headline-md text-headline-md text-error font-bold tracking-tight">2 REELS</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant mt-sub-atom">PENDING NCR REVIEW</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 mt-micro rounded overflow-hidden">
+<div class="bg-error h-full w-[12%]"></div>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-micro-coordinate text-micro-coordinate uppercase tracking-wider">Active PO Linkage</span>
+<span class="material-symbols-outlined text-[16px] text-primary">link</span>
+</div>
+<div class="mt-micro">
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">PO-0149</div>
+<div class="font-micro-coordinate text-micro-coordinate text-primary mt-sub-atom">FUTURE ELECTRONICS • 40K PCS</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 mt-micro rounded overflow-hidden">
+<div class="bg-primary h-full w-full"></div>
+</div>
+</div>
+<!-- Tile 5 -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors col-span-2 lg:col-span-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-micro-coordinate text-micro-coordinate uppercase tracking-wider">JEDEC MSL Auto-Log</span>
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">thermostat</span>
+</div>
+<div class="mt-micro">
+<div class="font-headline-md text-headline-md text-primary-fixed-dim font-bold tracking-tight">12 REELS</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant mt-sub-atom">LEVEL-3 → N2 PURGE ZONE B</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 mt-micro rounded overflow-hidden">
+<div class="bg-primary-fixed-dim h-full w-[45%]"></div>
+</div>
+</div>
+</section>
+<!-- CENTER SPLIT: AI CAMERA VIEWPORT (LEFT) & VERIFICATION ENGINE (RIGHT) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-regular">
+<!-- LEFT: Live High-Definition AI Vision Viewport (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-compact">
+<div class="bg-surface-container-lowest rounded p-compact shadow-xl relative overflow-hidden flex flex-col gap-compact">
+<!-- Viewport Header & HUD Status -->
+<div class="flex items-center justify-between bg-surface-container-low px-compact py-micro rounded">
+<div class="flex items-center gap-micro">
+<span class="h-2.5 w-2.5 rounded-full bg-error animate-pulse shadow-[0_0_8px_rgba(255,180,171,0.8)]"></span>
+<span class="font-data-mono-md text-data-mono-md font-bold text-on-surface">OPTICAL RIG CAM-02: FEED_ACTIVE</span>
+<span class="px-micro py-sub-atom bg-surface-container-high text-primary-container font-telemetry-pill text-telemetry-pill rounded">FOV 120mm MACRO</span>
+</div>
+<div class="flex items-center gap-compact font-micro-coordinate text-micro-coordinate text-on-surface-variant">
+<span>RES: 3840x2160</span>
+<span>SHUTTER: 1/4000s</span>
+<span>POLARIZER: 92%</span>
+</div>
+</div>
+<!-- Camera Render Surface (Bespoke Simulated Reel Stage) -->
+<div class="relative w-full aspect-[16/10] bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center shadow-inner select-none">
+<!-- Background industrial tape-and-reel context photo -->
+<img class="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-luminosity" data-alt="High magnification overhead industrial computer vision camera view of a black embossed carrier tape SMT 7-inch component reel with Yageo MLCC surface mount capacitors. Cybernetic cyan crosshairs and neon green laser alignment beams project over the barcode label. High precision sterile factory ambiance with sharp contrast and metallic reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrH2A4fDr4_3uNWyUQCtcTSI6pj_u6BjK5rO__NJ90CKE1Nmo17c5B5KyCpOEyHC4v6d_1e3Lgz4oR_0B4H1gFrBxY4GKtk6PeSJSwG3eHLgER9FOasvLcosutiNARWMI_2GTGwyOwY7ESeTMJVcZ9SfnuczTWWvLqP6sT69IUfRUeYA1gCdpxvfjfOO4bRZ9Jl3itqksvyKAejcQCMNcbTMm58r3wmooYz_c0Au8t3QAIObV3cfXq"/>
+<!-- Grid Reticle Overlay -->
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#00e5ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<!-- Synthetic Laser Crosshair -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<div class="w-full h-px bg-primary/20"></div>
+<div class="h-full w-px bg-primary/20 absolute"></div>
+<div class="w-32 h-32 rounded-full border border-primary/30 flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00e5ff]"></div>
+</div>
+</div>
+<!-- Interactive / Highlighted Bounding Boxes directly on the reel label -->
+<!-- Bounding Box 1: 2D DataMatrix Barcode (Secondary / Green) -->
+<div class="absolute top-12 left-10 w-28 h-28 border-2 border-secondary bg-secondary/10 p-sub-atom flex flex-col justify-between shadow-[0_0_12px_rgba(125,255,162,0.3)] transition-all">
+<div class="flex items-center justify-between bg-secondary text-on-secondary px-sub-atom py-sub-atom rounded-xs">
+<span class="font-micro-coordinate text-micro-coordinate font-bold">2D MATRIX</span>
+<span class="font-telemetry-pill text-telemetry-pill">99.9%</span>
+</div>
+<div class="font-micro-coordinate text-micro-coordinate text-secondary uppercase tracking-tight self-end">EIA-727 SPEC</div>
+</div>
+<!-- Bounding Box 2: MPN Code (Cyan / Primary) -->
+<div class="absolute top-12 left-44 right-16 h-14 border-2 border-primary-container bg-primary-container/10 p-sub-atom flex flex-col justify-between shadow-[0_0_16px_rgba(0,229,255,0.25)]">
+<div class="flex items-center justify-between bg-primary-container text-on-primary px-sub-atom py-sub-atom rounded-xs">
+<span class="font-micro-coordinate text-micro-coordinate font-bold">MPN: MATCH [PO #03]</span>
+<span class="font-telemetry-pill text-telemetry-pill">CONF: 99.8%</span>
+</div>
+<div class="font-data-mono-lg text-data-mono-lg font-bold text-primary tracking-wider px-micro" id="hud-mpn-display">CC0805KRX7R9BB104</div>
+</div>
+<!-- Bounding Box 3: Date Code (Amber / Warning) -->
+<div class="absolute bottom-20 left-44 w-44 h-12 border-2 border-secondary-fixed bg-secondary-fixed/10 p-sub-atom flex flex-col justify-between shadow-[0_0_12px_rgba(98,255,150,0.2)]">
+<div class="flex items-center justify-between bg-secondary-fixed text-on-secondary-fixed px-sub-atom py-sub-atom rounded-xs">
+<span class="font-micro-coordinate text-micro-coordinate font-bold">DATE CODE</span>
+<span class="font-telemetry-pill text-telemetry-pill">FRESH • PASS</span>
+</div>
+<div class="font-data-mono-md text-data-mono-md font-bold text-secondary-fixed px-micro" id="hud-dc-display">DC: 2448 (WK 48, 2024)</div>
+</div>
+<!-- Bounding Box 4: Lot Code (Tertiary) -->
+<div class="absolute bottom-20 right-16 w-52 h-12 border-2 border-tertiary-fixed-dim bg-tertiary-container/10 p-sub-atom flex flex-col justify-between shadow-[0_0_12px_rgba(205,189,255,0.2)]">
+<div class="flex items-center justify-between bg-tertiary-container text-on-tertiary-container px-sub-atom py-sub-atom rounded-xs">
+<span class="font-micro-coordinate text-micro-coordinate font-bold">LOT ID (IPC-1782)</span>
+<span class="font-telemetry-pill text-telemetry-pill">HASH VERIFIED</span>
+</div>
+<div class="font-data-mono-md text-data-mono-md font-bold text-tertiary px-micro" id="hud-lot-display">LOT-2025-02-B-991</div>
+</div>
+<!-- Bounding Box 5: Quantity (Green / Secondary) -->
+<div class="absolute bottom-4 left-10 w-72 h-12 border border-secondary bg-surface-container-lowest/90 p-sub-atom flex items-center justify-between px-compact">
+<div class="flex flex-col">
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">TAPE REEL QUANTITY</span>
+<span class="font-data-mono-md text-data-mono-md text-secondary font-bold" id="hud-qty-display">4,000 PCS / REEL</span>
+</div>
+<span class="font-telemetry-pill text-telemetry-pill px-micro py-sub-atom bg-secondary/20 text-secondary rounded">10 REELS RECONCILED</span>
+</div>
+<!-- Live Scan Sweep Line (Visual Simulation) -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container shadow-[0_0_18px_#00e5ff] animate-pulse pointer-events-none opacity-80"></div>
+</div>
+<!-- Camera Calibration Controls -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-micro">
+<button class="flex items-center justify-center gap-micro py-micro bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-data-mono-md text-data-mono-md transition-colors">
+<span class="material-symbols-outlined text-primary text-[16px]">center_focus_strong</span>
+<span>AF 50MM F/2.8</span>
+</button>
+<button class="flex items-center justify-center gap-micro py-micro bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-data-mono-md text-data-mono-md transition-colors">
+<span class="material-symbols-outlined text-secondary text-[16px]">grid_3x3</span>
+<span>RETICLE: ON</span>
+</button>
+<button class="flex items-center justify-center gap-micro py-micro bg-surface-container hover:bg-surface-container-high rounded text-secondary font-data-mono-md text-data-mono-md transition-colors">
+<span class="material-symbols-outlined text-[16px]">wb_iridescent</span>
+<span>UV ANTI-FORGERY</span>
+</button>
+<div class="flex items-center justify-between px-compact py-micro bg-surface-container rounded">
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">GAMMA:</span>
+<span class="font-data-mono-md text-data-mono-md text-primary font-bold">1.24 EV</span>
+</div>
+</div>
+<!-- Terminal Live Decoded Payload Stream -->
+<div class="bg-surface-container-lowest rounded p-compact shadow-inner flex flex-col gap-micro">
+<div class="flex items-center justify-between text-on-surface-variant font-micro-coordinate text-micro-coordinate">
+<div class="flex items-center gap-micro">
+<span class="material-symbols-outlined text-[12px] text-primary">data_array</span>
+<span>RAW OCR BYTE STREAM (HEX / JSON DECODE)</span>
+</div>
+<span class="text-secondary font-telemetry-pill text-telemetry-pill">CHECKSUM: 0x9F4B • VALID</span>
+</div>
+<div class="p-compact rounded bg-surface-container-low font-data-mono-md text-data-mono-md text-on-surface overflow-x-auto selection:bg-primary selection:text-on-primary">
+<p class="text-primary-container font-data-mono-md text-data-mono-md" id="raw-stream-content">[STREAM_REEL_002]: { "supplier_raw": "[)&gt;*06*PCC0805KRX7R9BB104*1P*Q4000*1T202502B991*4LUS*14D2448", "parsed": { "mpn": "CC0805KRX7R9BB104", "mfg": "YAGEO", "reel_qty": 4000, "dc": "2448", "coo": "TW", "jedec_msl": 1, "esd_sens": true } }</p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: AI Real-Time Document & Certificate Matcher (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-compact">
+<div class="bg-surface-container-lowest rounded p-compact shadow-xl flex flex-col gap-compact h-full">
+<!-- Header -->
+<div class="flex items-center justify-between bg-surface-container-low px-compact py-micro rounded">
+<div class="flex items-center gap-micro">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Real-Time COA &amp; PO Matcher</span>
+</div>
+<span class="font-telemetry-pill text-telemetry-pill px-micro py-sub-atom bg-secondary/20 text-secondary rounded">AUTOMATED</span>
+</div>
+<!-- Supplier Invoice vs PO Reconciliation Panel -->
+<div class="flex flex-col gap-sub-atom bg-surface-container-low p-compact rounded">
+<div class="flex items-center justify-between font-micro-coordinate text-micro-coordinate text-on-surface-variant">
+<span>PACKING SLIP / INVOICE OCR</span>
+<span>ACTIVE ERP PURCHASE ORDER</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-data-mono-md text-data-mono-md">
+<span class="text-primary font-bold">INV-FE-99418</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">compare_arrows</span>
+<span class="text-primary font-bold">PO-2025-0149 (LN #03)</span>
+</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant mt-sub-atom">
+            VENDOR: FUTURE ELECTRONICS ASIA LTD • SINGAPORE HUB
+          </div>
+</div>
+<!-- Specification Comparison Table -->
+<div class="space-y-micro flex-1"><div class="p-compact rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">MANUFACTURER PART NUMBER (MPN)</span><span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold" id="match-mpn-title">Yageo CC0805KRX7R9BB104 (100nF 50V)</span></div><div class="flex items-center gap-micro bg-secondary/15 px-compact py-sub-atom rounded text-secondary font-telemetry-pill text-telemetry-pill font-bold" id="match-mpn-badge"><span class="material-symbols-outlined text-[14px]">check</span><span>100% MATCH</span></div></div><div class="p-compact rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">DELIVERY QUANTITY RECONCILIATION</span><span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold" id="match-qty-title">40,000 PCS (10 Reels × 4,000/Reel)</span></div><div class="flex items-center gap-micro bg-secondary/15 px-compact py-sub-atom rounded text-secondary font-telemetry-pill text-telemetry-pill font-bold" id="match-qty-badge"><span class="material-symbols-outlined text-[14px]">check</span><span>FULFILLED</span></div></div><div class="p-compact rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">ROHS / REACH CERTIFICATE COMPLIANCE</span><span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold" id="match-rohs-title">EU 2015/863 • RoHS-3 • Halogen Free</span></div><div class="flex items-center gap-micro bg-primary-container/15 px-compact py-sub-atom rounded text-primary font-telemetry-pill text-telemetry-pill font-bold"><span class="material-symbols-outlined text-[14px]">lock</span><span>SHA-256 SIGNED</span></div></div><div class="p-compact rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">JEDEC J-STD-020 MSL CLASSIFICATION</span><span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold" id="match-msl-title">Level 1 (Floor Life: Unlimited ≤30°C/85% RH)</span></div><div class="flex items-center gap-micro bg-secondary/15 px-compact py-sub-atom rounded text-secondary font-telemetry-pill text-telemetry-pill font-bold" id="match-msl-badge"><span>DRY BAG NOT REQ</span></div></div><div class="p-compact rounded bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">UNIT PRICE EXTENSION (ERP CONTRACT)</span><span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold" id="match-price-title">₹0.38 / pc • Extended: ₹15,200.00</span></div><div class="flex items-center gap-micro bg-surface-container-high px-compact py-sub-atom rounded text-on-surface font-telemetry-pill text-telemetry-pill font-bold" id="match-price-badge"><span>ZERO VARIANCE</span></div></div></div>
+<!-- Supplier Reliability & Quality Telemetry Card -->
+<div class="p-compact rounded bg-surface-container-low flex flex-col gap-micro">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-micro">
+<span class="material-symbols-outlined text-secondary text-[16px]">corporate_fare</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Supplier Trust Tier: Tier 1</span>
+</div>
+<span class="font-telemetry-pill text-telemetry-pill text-secondary font-bold">99.8% FPY INWARD</span>
+</div>
+<div class="text-on-surface-variant font-micro-coordinate text-micro-coordinate">
+            36 Consecutive deliveries without non-conformance. Preferred fast-track GRN enabled.
+          </div>
+<div class="flex items-center gap-compact pt-sub-atom">
+<div class="flex-1 bg-surface-container-high h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full w-[99.8%]"></div>
+</div>
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">AUDIT: Q4-PASS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM SUITE: Automated GRN Generation, Dynamic Storage Allocation & Voice Log -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-regular">
+<!-- GRN Draft & Physical Allocation Pipeline (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded p-compact shadow-xl flex flex-col justify-between gap-compact">
+<div>
+<div class="flex items-center justify-between bg-surface-container-low px-compact py-micro rounded mb-compact">
+<div class="flex items-center gap-micro">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">GRN Inward Pipeline • GRN-2025-0891</span>
+</div>
+<span class="font-telemetry-pill text-telemetry-pill px-micro py-sub-atom bg-primary/20 text-primary rounded">AUTO-GENERATED</span>
+</div>
+<!-- Storage & Conveyor Route Visual Map -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-micro">
+<!-- Step 1: Scanner Inward -->
+<div class="p-compact rounded bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-micro-coordinate text-micro-coordinate">
+<span>STAGE 01</span>
+<span class="text-secondary">COMPLETE</span>
+</div>
+<div class="my-sub-atom">
+<div class="font-data-mono-md text-data-mono-md text-on-surface font-bold">CONVEYOR 02</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">Laser Dimension &amp; Mass Checked</div>
+</div>
+<div class="font-telemetry-pill text-telemetry-pill text-primary">WEIGHT: 142g ±2g</div>
+</div>
+<!-- Step 2: Auto Warehouse Dispatch -->
+<div class="p-compact rounded bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-micro-coordinate text-micro-coordinate">
+<span>STAGE 02</span>
+<span class="text-primary-container">DISPATCHED</span>
+</div>
+<div class="my-sub-atom">
+<div class="font-data-mono-md text-data-mono-md text-on-surface font-bold">AGV ROVER #03</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">Conveyor Unload Dock → Zone A</div>
+</div>
+<div class="font-telemetry-pill text-telemetry-pill text-secondary">EST. ARRIVAL: 42 SEC</div>
+</div>
+<!-- Step 3: High Density SMD Tower Location -->
+<div class="p-compact rounded bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-micro-coordinate text-micro-coordinate">
+<span>TARGET BIN</span>
+<span class="text-secondary">GREEN LIGHT</span>
+</div>
+<div class="my-sub-atom">
+<div class="font-data-mono-md text-data-mono-md text-on-surface font-bold">TOWER R04-S2-B18</div>
+<div class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">Automated Carousel Tray #18</div>
+</div>
+<div class="font-telemetry-pill text-telemetry-pill text-secondary">PICK-TO-LIGHT ARMED</div>
+</div>
+</div>
+</div>
+<!-- Historical Exception Alert from Previous Inward Lot -->
+<div class="p-compact rounded bg-surface-container-low flex items-start gap-compact">
+<div class="w-8 h-8 rounded bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">broken_image</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-error">Historical NCR Log #NCR-2025-0041 (Quarantined)</span>
+<span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">14 MINS AGO • CONVEYOR 01</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-sub-atom">
+            Nordic Semiconductor NRF52840-QIAA-R: Reel MBB moisture bag puncture detected via vacuum sensor. Auto-diverted to Quarantined Dry Nitrogen Bake Chamber (Bake: 48h @ 125°C).
+          </p>
+</div>
+</div>
+</div>
+<!-- Autonomous JARVIS AI Agent & Synthetic Voice Logger (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded p-compact shadow-xl flex flex-col justify-between gap-compact">
+<!-- Card Header -->
+<div class="flex items-center justify-between bg-surface-container-low px-compact py-micro rounded">
+<div class="flex items-center gap-micro">
+<span class="material-symbols-outlined text-primary-container text-[18px]">neurology</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">JARVIS Vision Co-Pilot</span>
+</div>
+<div class="flex items-center gap-sub-atom font-telemetry-pill text-telemetry-pill text-primary-container">
+<span class="h-2 w-2 rounded-full bg-primary-container animate-ping"></span>
+<span>ONLINE</span>
+</div>
+</div>
+<!-- Real-time SVG Audio Spectrum Visualizer -->
+<div class="bg-surface-container-low p-compact rounded flex flex-col gap-micro">
+<div class="flex items-center justify-between font-micro-coordinate text-micro-coordinate text-on-surface-variant">
+<span>ACOUSTIC SYNTHESIS ENGINE</span>
+<span class="text-primary">SAMPLING: 48kHz / 24-BIT</span>
+</div>
+<!-- Inline Animated SVG Audio Waveform -->
+<div class="w-full h-12 flex items-center justify-between px-micro gap-1 overflow-hidden">
+<svg class="w-full h-10 text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 240 40">
+<path class="opacity-80" d="M0 20 Q 10 5, 20 20 T 40 20 T 60 20 T 80 5 T 100 35 T 120 10 T 140 30 T 160 18 T 180 20 T 200 8 T 220 28 T 240 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path class="opacity-60" d="M0 20 Q 15 35, 30 20 T 60 20 T 90 30 T 120 5 T 150 25 T 180 15 T 210 25 T 240 20" fill="none" stroke="#7dffa2" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<!-- Voice Transcription Log Terminal -->
+<div class="p-compact rounded bg-surface-container-low flex flex-col gap-sub-atom">
+<div class="flex items-center gap-micro font-micro-coordinate text-micro-coordinate text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">record_voice_over</span>
+<span>TRANSCRIPTION // 11:42:08 IST</span>
+</div>
+<p class="font-data-mono-md text-data-mono-md text-primary leading-relaxed">
+          “Reel scan verified against PO-2025-0149. GRN-2025-0891 confirmed without variance. Smart label 2D QR dispatched to Zebra Print Engine #02. Autonomous AGV #03 signaled for transport to SMD Carousel Tower R04 Bin B18.”
+        </p>
+</div>
+<!-- Quick Synthetic Commands -->
+<div class="flex items-center gap-micro flex-wrap pt-sub-atom">
+<button class="px-compact py-sub-atom bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded font-data-mono-md text-data-mono-md transition-colors">
+          RE-READ BARCODE
+        </button>
+<button class="px-compact py-sub-atom bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded font-data-mono-md text-data-mono-md transition-colors">
+          DISPATCH AGV NOW
+        </button>
+<button class="px-compact py-sub-atom bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded font-data-mono-md text-data-mono-md transition-colors">
+          EXPORT JSON AUDIT
+        </button>
+</div>
+</div>
+</section><section class="bg-surface-container-lowest border border-outline-variant p-compact rounded shadow-xl flex flex-col gap-compact" id="scanned-reel-audit-suite"><div class="flex items-center justify-between bg-surface-container-low px-compact py-micro rounded"><div class="flex items-center gap-micro"><span class="material-symbols-outlined text-primary text-[18px]">table_chart</span><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Live Scanner Inward Log • Hardware Session Stream</span><span class="px-micro py-sub-atom bg-primary-container/20 text-primary-container font-telemetry-pill text-telemetry-pill rounded font-bold" id="scan-counter-badge">4 REELS LOGGED</span></div><div class="flex items-center gap-compact"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">INTERCEPTOR: BUFFER EMPTY</span><button class="px-compact py-sub-atom bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded font-data-mono-md text-data-mono-md transition-colors" onclick="clearScanLogTable()">CLEAR LOG</button></div></div><div class="overflow-x-auto"><table class="w-full text-left font-data-mono-md text-data-mono-md"><thead class="bg-surface-container-high text-on-surface-variant font-micro-coordinate text-micro-coordinate uppercase border-b border-outline-variant"><tr><th class="py-micro px-compact">Timestamp</th><th class="py-micro px-compact">Source</th><th class="py-micro px-compact">MPN (Part Number)</th><th class="py-micro px-compact">Lot Code</th><th class="py-micro px-compact">Qty</th><th class="py-micro px-compact">Date Code</th><th class="py-micro px-compact">MSL</th><th class="py-micro px-compact">Burst Latency</th><th class="py-micro px-compact">OCR Status</th></tr></thead><tbody class="divide-y divide-surface-container-highest" id="scanner-audit-tbody"><tr class="hover:bg-surface-container-low/60 transition-colors"><td class="py-compact px-compact text-on-surface-variant">11:42:08.412</td><td class="py-compact px-compact text-secondary">USB Gun #01</td><td class="py-compact px-compact text-primary font-bold">CC0805KRX7R9BB104</td><td class="py-compact px-compact text-on-surface">LOT-2025-02-B-991</td><td class="py-compact px-compact text-secondary font-semibold">4,000</td><td class="py-compact px-compact">2448</td><td class="py-compact px-compact text-secondary">MSL-1</td><td class="py-compact px-compact text-on-surface-variant">14ms</td><td class="py-compact px-compact"><span class="px-micro py-sub-atom bg-secondary/15 text-secondary text-telemetry-pill font-bold rounded">PASS / 100%</span></td></tr><tr class="hover:bg-surface-container-low/60 transition-colors"><td class="py-compact px-compact text-on-surface-variant">11:39:15.820</td><td class="py-compact px-compact text-primary">Auto Optical</td><td class="py-compact px-compact text-primary font-bold">CC0805KRX7R9BB104</td><td class="py-compact px-compact text-on-surface">LOT-2025-02-B-990</td><td class="py-compact px-compact text-secondary font-semibold">4,000</td><td class="py-compact px-compact">2448</td><td class="py-compact px-compact text-secondary">MSL-1</td><td class="py-compact px-compact text-on-surface-variant">18ms</td><td class="py-compact px-compact"><span class="px-micro py-sub-atom bg-secondary/15 text-secondary text-telemetry-pill font-bold rounded">PASS / 100%</span></td></tr><tr class="hover:bg-surface-container-low/60 transition-colors"><td class="py-compact px-compact text-on-surface-variant">11:34:02.109</td><td class="py-compact px-compact text-error">Conveyor #01</td><td class="py-compact px-compact text-error font-bold">NRF52840-QIAA-R</td><td class="py-compact px-compact text-error">LOT-2025-02-N-014</td><td class="py-compact px-compact text-error font-semibold">3,000</td><td class="py-compact px-compact">2442</td><td class="py-compact px-compact text-error">MSL-3 (VAPOR FAIL)</td><td class="py-compact px-compact text-on-surface-variant">22ms</td><td class="py-compact px-compact"><span class="px-micro py-sub-atom bg-error/15 text-error text-telemetry-pill font-bold rounded">QUARANTINE / NCR</span></td></tr><tr class="hover:bg-surface-container-low/60 transition-colors"><td class="py-compact px-compact text-on-surface-variant">11:28:44.931</td><td class="py-compact px-compact text-secondary">USB Gun #01</td><td class="py-compact px-compact text-primary font-bold">GRM188R71C104KA01D</td><td class="py-compact px-compact text-on-surface">LOT-2025-01-M-482</td><td class="py-compact px-compact text-secondary font-semibold">4,000</td><td class="py-compact px-compact">2445</td><td class="py-compact px-compact text-secondary">MSL-1</td><td class="py-compact px-compact text-on-surface-variant">12ms</td><td class="py-compact px-compact"><span class="px-micro py-sub-atom bg-secondary/15 text-secondary text-telemetry-pill font-bold rounded">PASS / 100%</span></td></tr></tbody></table></div></section>
+</div>
+<script>
+  // Simple micro-interactions: Toggle AF & Reticle states for HUD realism
+  document.addEventListener('DOMContentLoaded', () => {
+    const actionBtns = document.querySelectorAll('button');
+    actionBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.classList.add('opacity-75');
+        setTimeout(() => this.classList.remove('opacity-75'), 150);
+      });
+    });
+  });
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-12 bg-surface-container-lowest/95 backdrop-blur-xl z-30 flex items-center justify-between px-regular shadow-[0_-1px_12px_rgba(0,0,0,0.6)]"><div class="flex items-center gap-spacious"><div class="flex items-center gap-compact"><span class="material-symbols-outlined text-secondary text-[16px]">factory</span><span class="font-data-mono-md text-data-mono-md text-on-surface-variant">ACTIVE SMT LINES:</span><span class="font-data-mono-md text-data-mono-md text-secondary font-bold">6 / 6</span></div><div class="flex items-center gap-compact"><span class="material-symbols-outlined text-primary-container text-[16px]">precision_manufacturing</span><span class="font-data-mono-md text-data-mono-md text-on-surface-variant">YIELD EFFICIENCY:</span><span class="font-data-mono-md text-data-mono-md text-primary-fixed font-bold">99.42%</span></div><div class="flex items-center gap-compact"><span class="material-symbols-outlined text-error text-[16px]">warning</span><span class="font-data-mono-md text-data-mono-md text-on-surface-variant">LOW STOCK CRITICAL:</span><span class="font-data-mono-md text-data-mono-md text-error font-bold">14 SKUS</span></div></div><div class="flex items-center gap-regular"><div class="flex items-center gap-micro"><span class="font-micro-coordinate text-micro-coordinate text-on-surface-variant">JARVIS KERNEL:</span><span class="font-telemetry-pill text-telemetry-pill text-primary-container tracking-wider">v4.2.0-STABLE</span></div><div class="h-1.5 w-1.5 rounded-full bg-secondary shadow-[0_0_6px_rgba(125,255,162,0.9)]"></div></div></footer></div></body></html>
